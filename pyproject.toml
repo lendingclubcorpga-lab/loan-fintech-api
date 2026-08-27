@@ -1,12 +1,12 @@
 [tool.poetry]
 name = "loan-fintech-api"
 version = "0.1.0"
-description = "💳 ☁️ Another Loan Fintech API"
+description = "💳 ☁️ Another Loan Fintech API with Streamlit Frontend"
 authors = ["Leonardo Gregianin <leogregianin@gmail.com>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = ">=3.9,<3.13"
 django = "3.2.18"
 djangorestframework = "^3.13.1"
 dj-database-url = "^0.5.0"
@@ -14,6 +14,8 @@ whitenoise = "^6.1.0"
 django-cors-headers = "^3.12.0"
 drf-yasg = "^1.20.0"
 djangorestframework-simplejwt = "^5.1.0"
+streamlit = "^1.35.0"
+pyyaml = ">=6.0.1"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^4.0.1"
@@ -22,5 +24,5 @@ black = "^22.3.0"
 pre-commit = "^2.19.0"
 
 [build-system]
-requires = ["poetry>=0.12"]
-build-backend = "poetry.masonry.api"
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
